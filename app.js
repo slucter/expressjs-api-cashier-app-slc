@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const router = require('./src/router/index');
-const bodyParser = require('body-parser');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
 app.use(cors())
 app.use(bodyParser.urlencoded({
